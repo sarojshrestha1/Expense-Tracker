@@ -11,7 +11,7 @@ A simple command-line expense tracker built with Python. This project is designe
 
 - Delete expense option
 
--Input validation for menu choice
+- Input validation for menu choice
 
 ## Technology
 - Python 
