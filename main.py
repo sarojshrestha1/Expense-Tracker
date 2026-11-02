@@ -37,15 +37,39 @@ def main():
 
 #creating function to add expense
 def add_expense():
-    ...
+    print("\n\t\t-------------------------------")
+    print("\n\t\t\tAdd Expence")
+    print("\n\t\t-------------------------------")
+
+    try:
+        amount= float(input("Enter Amount: "))
+
+    except ValueError:
+        print("Enter amount in numbers not in words!")
+        return
+
+    if amount <0:
+        print("Please enter positive number ") 
+        return
+    
+
+    category= input("Enter category: ")
+    date= input("Enter date: ")
+    description= input("Enter description: ")
+
+    
 
 #creating function to view expense
 def view_expense():
-    ...     
+    print("\n\t\t-------------------------------")
+    print("\n\t\t\tView Expence")
+    print("\n\t\t-------------------------------")     
 
 #creating function to delete expense
 def delete_expense():
-    ...
+    print("\n\t\t-------------------------------")
+    print("\n\t\t\tDelete Expence")
+    print("\n\t\t-------------------------------")
 
 if __name__ == "__main__":
     main()
