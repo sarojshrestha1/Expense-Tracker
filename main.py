@@ -1,3 +1,6 @@
+import json
+
+
 def main():
     while True:
         print("\n\t\t-------------------------------")
@@ -57,6 +60,16 @@ def add_expense():
     date= input("Enter date: ")
     description= input("Enter description: ")
 
+    expense ={
+        "amount": amount,
+        "category": category,
+        "date": date,
+        "description": description
+    }
+
+    with open("expense.json", 'a') as file:
+        json.dump(expense, file)
+        
     
 
 #creating function to view expense
